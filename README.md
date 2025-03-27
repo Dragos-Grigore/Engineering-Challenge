@@ -55,17 +55,24 @@ Supervised Classification:
 
 -Got better results for Accuracy like 0.9742 but it definitly overfits.
 
-Predicts labels for the unlabeled test set.
+-Predicts labels for the unlabeled test set.
 
 Export Final Results:
 
-Combines both labeled and predicted data into one final dataset.
+-Combines both labeled and predicted data into one final dataset.
+
+-Saves to final_labels.csv.
+
+Conclusions:
 
 The solutions excels because the cosine similarity got good results and transformed an unsupervised problem into a uspervised one.
-The solution needs improvement to baseline because >0.10 seems too low.
-Cosine similarity doesn't find an occurence in dataset for every label.
-The solution would get better results for a bigger dataset as it will have the chance to cover more labels and get more examples for the covered ones.
-An assumption which was made is that all the labels with the probability above 0.10 are correct.
-This solution was used because the dataset has many keywords in description and category which also appear in the labels, so using cosine similarity to label a part of the dataset seemed a good idea.
 
-Saves to final_labels.csv.
+-The solution needs improvement to baseline because >0.10 seems too low.
+
+-Cosine similarity doesn't find an occurence in dataset for every label.
+
+-The solution would get better results for a bigger dataset as it will have the chance to cover more labels and get more examples for the covered ones.
+
+-An assumption which was made is that all the labels with the probability above 0.10 are correct.
+
+-This solution was used because the dataset has many keywords in description and category which also appear in the labels, so using cosine similarity to label a part of the dataset seemed a good idea.
